@@ -14,65 +14,67 @@
 
   <body ontouchstart="">
     <!-- Navigation -->
-    <nav class="nav">
-      <img class="nav__img" src="media/logo-blue.png" alt="Lopenve Main Logo">
-      <p class="nav__title">Lopenve Limited</p>
-      <div class="nav__hamburger">
-        <span class="hamburger__slice"></span>
-        <span class="hamburger__slice"></span>
-        <span class="hamburger__slice"></span>
-      </div>
-      <ul class="nav__list">
-        <li class="nav__list__item nav__list__home"><a>Home</a></li>
-        <li class="nav__list__item nav__list__about"><a>About</a></li>
-        <li class="nav__list__item nav__list__contact"><a>Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="nav">
+          <img class="nav__img" src="media/logo-blue.png" alt="Lopenve Main Logo">
+          <p class="nav__title">Lopenve Limited</p>
+          <div class="nav__hamburger">
+            <span class="hamburger__slice"></span>
+            <span class="hamburger__slice"></span>
+            <span class="hamburger__slice"></span>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__list__item nav__list__home"><a>Home</a></li>
+            <li class="nav__list__item nav__list__about"><a>About</a></li>
+            <li class="nav__list__item nav__list__contact"><a>Contact</a></li>
+          </ul>
+        </nav>
+    </header>
     <!-- Landing Page Content -->
     <main class="landing-page">
       <h1 class="landing-page__title">Lopenve Limited</h1>
       <h2 class="landing-page__sub">Trading for over 10 years, specializing<br>in Oil and Gas Telecoms projects.</h2>
       <div class="landing-flex">
           <button class="landing-flex__btn">Contact Us</button>
-          <!-- <img class="landing-flex__illud" src="" alt="Engineering Illustration Desktop">
-          <img class="landing-flex__illup" src="" alt="Engineering Illustration Phone"> -->
+          <img class="landing-flex__illud" src="media/eng-illu-d.png" alt="Engineering Illustration Desktop">
+          <img class="landing-flex__illup" src="" alt="Engineering Illustration Phone">
           <img class="landing-flex__logo" src="media/logo-black.png" alt="Lopenve Limited Black Logo">
       </div>
     </main>
     <!-- About Page Content -->
-    <main class="about-page">
-      <div class="about-page--background"> <!-- Use a pseudo element to add the blue box -->
-          <h1>About Us</h1>
-          <p>Our company has been trading for over 10 years, specializing in Oil and Gas Telecoms projects. 
-            From PRE-FEED and FEED Engineering design, through to Full Telecoms EPC projects.<br>
-            Over Twenty-Five years of Telecoms Engineering, Design and Commissioning experience in the onshore 
-            & offshore oil & gas, and telecoms industries. Experienced in both onshore and offshore work, 
-            including multi- platform, floating facilities and LNG plants in such locations as The North Sea, 
-            Norway, Mexico, Russia, UAE and Peru.</p>
-          <img src="" alt="Engineering Illustration Single Desktop">
-          <p>We can undertake Concept Studies, Front End Engineering Design, Detailed Engineering, team management 
-            and proposal work.  Telecoms Engineering capabilities include preparing bid packages and technical 
-            evaluation of bid proposals, work planning, CTRs and manpower estimates. Knowledge areas include 
-            Public Address and General Alarm (PAGA) systems, Data and Telephony networks, TETRA, Closed Circuit 
-            Television (CCTV), Access Control, Muster Systems, Fibre Optic, satellite systems (VSAT’s) and Digital 
-            Transmission Systems.</p>
-      </div>
+    <main class="about-page"> <!-- Use a pseudo element to add the blue box -->
+      <h1 class="about-page__title">About Us</h1>
+      <p class="about-page__p1">Our company has been trading for over 10 years, specializing in Oil and Gas Telecoms projects. 
+        From PRE-FEED and FEED Engineering design, through to Full Telecoms EPC projects.<br>
+        Over Twenty-Five years of Telecoms Engineering, Design and Commissioning experience in the onshore 
+        & offshore oil & gas, and telecoms industries. Experienced in both onshore and offshore work, 
+        including multi- platform, floating facilities and LNG plants in such locations as The North Sea, 
+        Norway, Mexico, Russia, UAE and Peru.</p>
+      <!-- <img src="" alt="Engineering Illustration Single Desktop"> -->
+      <p class="about-page__p2">We can undertake Concept Studies, Front End Engineering Design, Detailed Engineering, team management 
+        and proposal work.  Telecoms Engineering capabilities include preparing bid packages and technical 
+        evaluation of bid proposals, work planning, CTRs and manpower estimates. Knowledge areas include 
+        Public Address and General Alarm (PAGA) systems, Data and Telephony networks, TETRA, Closed Circuit 
+        Television (CCTV), Access Control, Muster Systems, Fibre Optic, satellite systems (VSAT’s) and Digital 
+        Transmission Systems.</p>
     </main>
     <!-- Contact Page Content -->
     <main class="contact-page">
-      <h1>Contact Us</h1>
-      <img src="media/phone-icon.png" alt="Phone Contact Image">
-      <img src="media/email-icon.png" alt="Email Contact Image">
-      <img src="media/linkedin-icon.png" alt="LinkedIn Contact Image">
+      <h1 class="contact-page__title">Contact Us</h1>
+      <div class="contact-page__flex">
+          <img src="media/phone-icon.png" alt="Phone Contact Image">
+          <img src="media/email-icon.png" alt="Email Contact Image">
+          <img src="media/linkedin-icon.png" alt="LinkedIn Contact Image">
+      </div>
     </main>
     <!--Footer -->
     <footer class="footer">
-        <img src="" alt="Lopenve Main Logo">
+        <img src="media/logo-white.png" alt="Lopenve Main Logo">
         <p>&copy; Lopenve Limited 2019</p>
-        <img src="" alt="LinkedIn Contact Image for the Footer">
-        <p>Website Designed and Developed by Amy Keable</p>
+        <img src="media/linkedin-icon.png" alt="LinkedIn Contact Image for the Footer">
+        <p class="amy">Website Designed and Developed by Amy Keable</p>
     </footer>
     <!-- Javascript -->
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="scripts/events.js"></script>
   </body>
 </html>
