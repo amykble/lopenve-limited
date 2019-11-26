@@ -63,3 +63,32 @@ header {
   --background: #121212;
   --text: #fafafa;
 }
+
+@media only screen and (max-width: 991px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__img {
+    height: 15px;
+  }
+  .nav__title {
+    font-size: 18px;
+  }
+  .nav__list {
+    font-size: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nav__list__home, .nav__list__about {
+    padding-right: 50px;
+  }
+  .nav__list__contact {
+    padding-right: 50px;
+  }
+}
