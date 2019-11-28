@@ -123,7 +123,8 @@ header nav ul a:hover, header nav ul a:focus {
 
 @media only screen and (max-width: 479px) {
   header .nav-display {
-    width: 100%;
+    width: 90vw;
+    margin: 0 5vw;
     height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -131,16 +132,17 @@ header nav ul a:hover, header nav ul a:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   header .nav-display img {
     padding: 0;
     margin: 0;
     height: 20px;
-    margin-left: 20px;
   }
   header .nav-display p {
     font-size: 22px;
-    margin: 0 auto;
   }
   header .nav-display .nav-toggle-label {
     display: block;
@@ -150,7 +152,6 @@ header nav ul a:hover, header nav ul a:focus {
     height: 4px;
     width: 23px;
     border-radius: 3px;
-    margin-right: 20px;
     background-color: #1C4BE1;
     position: relative;
   }
