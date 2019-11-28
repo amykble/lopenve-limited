@@ -61,6 +61,14 @@ header nav ul {
           justify-content: flex-end;
 }
 
+header nav ul a {
+  text-decoration: none;
+}
+
+header nav ul a:visited {
+  color: #121212;
+}
+
 header nav ul .home, header nav ul .about {
   padding-right: 100px;
 }

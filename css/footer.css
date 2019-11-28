@@ -29,7 +29,7 @@ footer .amy {
     height: 50px;
     font-family: "Montserrat", sans-serif;
     color: #fafafa;
-    font-size: 12px;
+    font-size: 10px;
     background-color: #121212;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40,10 +40,10 @@ footer .amy {
   }
   footer img {
     height: 15px;
-    margin: 10px;
+    margin: 10px 10px 10px 2px;
   }
   footer .amy {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 2px;
   }
 }

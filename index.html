@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="icon" type="image/png" href="media/logo-square-blue.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="media/logo-square-blue.png" sizes="32x32" />
+    <link rel="script" href="https://cdn.jsdelivr.net/npm/mailgo@0.8.1/dist/mailgo.min.js"/>
   </head>
 
   <body ontouchstart="">
@@ -25,17 +26,17 @@
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <nav>
           <ul>
-            <li class="home"><a>Home</a></li>
-            <li class="about"><a>About</a></li>
-            <li class="contact"><a>Contact</a></li>
+            <li class="home"><a href=#landing-page>Home</a></li>
+            <li class="about"><a href=#about-page>About</a></li>
+            <li class="contact"><a href=#contact-page>Contact</a></li>
           </ul>
       </nav>
     </header>
     <!-- Landing Page Content -->
-    <main class="landing-page">
+    <main class="landing-page" id="landing-page">
       <h1 class="landing-page__title">Lopenve Limited</h1>
       <h2 class="landing-page__sub">Trading for over 10 years, specializing<br>in Oil and Gas Telecoms projects.</h2>
-      <button class="landing-page__btn">Contact Us</button>
+      <a href=#contact-page><button class="landing-page__btn">Contact Us</button></a>
       <img class="landing-page__illud" src="media/eng-illu-d.png" alt="Engineering Illustration Desktop">
       <div class="phone-img-container">
         <img class="illup" src="media/eng-illu-pb.png" alt="Engineering Illustration Phone">
@@ -43,7 +44,7 @@
       <img class="landing-page__logo" src="media/logo-black.png" alt="Lopenve Limited Black Logo">
     </main>
     <!-- About Page Content -->
-    <main class="about-page"> <!-- Use a pseudo element to add the blue box -->
+    <main class="about-page" id="about-page"> <!-- Use a pseudo element to add the blue box -->
       <h1 class="about-page__title">About Us</h1>
       <p class="about-page__p1">Our company has been trading for over 10 years, specializing in Oil and Gas Telecoms projects. 
         From PRE-FEED and FEED Engineering design, through to Full Telecoms EPC projects.<br>
@@ -61,11 +62,11 @@
         <img class="about-page__illud" src="media/eng-illu-pw.png" alt="Engineering Illustration Desktop">
     </main>
     <!-- Contact Page Content -->
-    <main class="contact-page">
+    <main class="contact-page" id="contact-page">
       <h1 class="contact-page__title">Contact Us</h1>
       <div class="contact-page__flex">
-          <img src="media/phone-icon.png" alt="Phone Contact Image">
-          <img src="media/email-icon.png" alt="Email Contact Image">
+          <a href="#mailgo" data-tel="07595346750"><img src="media/phone-icon.png" alt="Phone Contact Image"></a>
+          <a href="#mailgo" data-address="alex" data-domain="lopenve.com"><img src="media/email-icon.png" alt="Email Contact Image"></a>
       </div>
     </main>
     <!--Footer -->
@@ -75,6 +76,7 @@
         <p class="amy">Website Designed and Developed by Amy Keable</p>
     </footer>
     <!-- Javascript -->
-    <script type="text/javascript" src="scripts/events.js"></script>
+    <!-- Mailgo Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/mailgo@0.8.1/dist/mailgo.min.js"></script>
   </body>
 </html>
