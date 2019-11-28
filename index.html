@@ -15,31 +15,32 @@
   <body ontouchstart="">
     <!-- Navigation -->
     <header>
-      <nav class="nav">
-          <img class="nav__img" src="media/logo-blue.png" alt="Lopenve Main Logo">
-          <p class="nav__title">Lopenve Limited</p>
-          <div class="nav__hamburger">
-            <span class="hamburger__slice"></span>
-            <span class="hamburger__slice"></span>
-            <span class="hamburger__slice"></span>
-          </div>
-          <ul class="nav__list">
-            <li class="nav__list__item nav__list__home"><a>Home</a></li>
-            <li class="nav__list__item nav__list__about"><a>About</a></li>
-            <li class="nav__list__item nav__list__contact"><a>Contact</a></li>
+      <div class="nav-display">
+          <img src="media/logo-blue.png" alt="Lopenve Main Logo">
+          <p>Lopenve Limited</p>
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+          <ul>
+            <li class="home"><a>Home</a></li>
+            <li class="about"><a>About</a></li>
+            <li class="contact"><a>Contact</a></li>
           </ul>
-        </nav>
+      </nav>
     </header>
     <!-- Landing Page Content -->
     <main class="landing-page">
       <h1 class="landing-page__title">Lopenve Limited</h1>
       <h2 class="landing-page__sub">Trading for over 10 years, specializing<br>in Oil and Gas Telecoms projects.</h2>
-      <div class="landing-flex">
-          <button class="landing-flex__btn">Contact Us</button>
-          <img class="landing-flex__illud" src="media/eng-illu-d.png" alt="Engineering Illustration Desktop">
-          <img class="landing-flex__illup" src="media/eng-illu-pb.png" alt="Engineering Illustration Phone">
-          <img class="landing-flex__logo" src="media/logo-black.png" alt="Lopenve Limited Black Logo">
+      <button class="landing-page__btn">Contact Us</button>
+      <img class="landing-page__illud" src="media/eng-illu-d.png" alt="Engineering Illustration Desktop">
+      <div class="phone-img-container">
+        <img class="illup" src="media/eng-illu-pb.png" alt="Engineering Illustration Phone">
       </div>
+      <img class="landing-page__logo" src="media/logo-black.png" alt="Lopenve Limited Black Logo">
     </main>
     <!-- About Page Content -->
     <main class="about-page"> <!-- Use a pseudo element to add the blue box -->
@@ -57,6 +58,7 @@
         Public Address and General Alarm (PAGA) systems, Data and Telephony networks, TETRA, Closed Circuit 
         Television (CCTV), Access Control, Muster Systems, Fibre Optic, satellite systems (VSAT’s) and Digital 
         Transmission Systems.</p>
+        <img class="about-page__illud" src="media/eng-illu-pw.png" alt="Engineering Illustration Desktop">
     </main>
     <!-- Contact Page Content -->
     <main class="contact-page">
@@ -71,7 +73,6 @@
     <footer class="footer">
         <img src="media/logo-white.png" alt="Lopenve Main Logo">
         <p>&copy; Lopenve Limited 2019</p>
-        <img src="media/linkedin-icon.png" alt="LinkedIn Contact Image for the Footer">
         <p class="amy">Website Designed and Developed by Amy Keable</p>
     </footer>
     <!-- Javascript -->
